@@ -1,0 +1,71 @@
+@font-face {
+  font-family: bebasneue;
+  src: url("assets/bebas_neue/BebasNeue\ Regular.otf") format("opentype");
+}
+
+@font-face {
+  font-family: bebasneue;
+  font-weight: bold;
+  src: url("assets/bebas_neue/BebasNeue\ Bold.otf.otf") format("opentype");
+}
+
+
+body {
+  margin: 0;
+  overflow: hidden;
+  font-family: bebasneue;
+}
+
+.transition-wrapper {
+  height: 100vh;
+  width: 100vw;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#transition-start {
+  background: #1d628b;
+}
+
+#transition-start > img.logo {
+  width: 200px;
+}
+
+#transition-second {
+  position: absolute;
+  top: 0;
+  left: 100%;
+  transition: left .3s ease;
+  background: #444444;
+  z-index:5;
+}
+
+#transition-three {
+  position: absolute;
+  top: 0;
+  left: 100%;
+  transition: left .3s ease;
+  background: #1d628b;
+  z-index:10;
+  color: #FFF;
+}
+
+#transition-three .text h1 {
+  width: 100%;
+  text-align: center;
+  font-size: 5em;
+  margin: 0;
+}
+
+#transition-three .text p {
+  width: 100%;
+  text-align: center;
+  font-size: 2.5em;
+  margin: 0em;
+  color: #ffffff61;
+}
